@@ -1,0 +1,98 @@
+footer{
+    background: url("../img/IMAGE\ \(11\).svg") no-repeat center/cover;
+    height: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    .card__text{
+        padding-top: 80px;
+        font-size: 20px;
+        font-family: "Oxygen";
+        color: #fff;
+        text-align: center;
+    }
+    .card__hr{
+        width: 188px;
+        margin: 16px auto;
+    }
+    .footer__main{
+        width: 500px;
+        margin: 0 auto;
+        background: #fff;
+        display: flex;
+        .footer__inp{
+            width: 100%;
+            font-size: 14px;
+            font-family: "Oxygen";
+            padding-left: 35px;
+            padding-right: 10px;
+        }
+        .footer__btn{
+            font-size: 14px;
+            font-family: "Oxygen";
+            padding: 20px 45px;
+        }
+    }
+    .footer__end{
+        background: #232F38;
+        width: 100%;
+        .navbar{
+            min-height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .navbar__collection{
+                display: flex;
+                gap: 40px;
+                .navbar__item{
+                    font-family: "Oxygen";
+                    font-size: 14px;
+                    list-style: 20px;
+                    text-transform: uppercase;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:550px) {
+    footer{
+        .footer__main{
+            width: 350px;
+            .footer__inp{
+                padding-left: 10px;
+            }
+        }
+        .footer__end{
+            .navbar{
+                display: grid;
+                .navbar__logo{
+                    margin-top: 20px;
+                }
+                .navbar__collection{
+                    margin-top: 10px;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+    footer{
+        .footer__main{
+            width: 250px;
+            .footer__inp{
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            .footer__btn{
+                padding: 10px 25px;
+            }
+        }
+    }
+}

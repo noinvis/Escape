@@ -1,0 +1,94 @@
+.header{
+    background: url("../img/IMAGE.svg") no-repeat center/cover;
+    min-height: 650px;
+    .container{
+        .navbar{
+            overflow: hidden;
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .navbar__collection{
+                display: flex;
+                gap: 40px;
+                .navbar__item{
+                    font-family: "Oxygen";
+                    font-size: 14px;
+                    list-style: 20px;
+                    text-transform: uppercase;
+                    color: white;
+                }
+                .navbar__bar{
+                    display: none;
+                }
+            }
+        }
+        .hero{
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .hero__main{
+                font-size: 50px;
+                font-family: "Lora";
+                color: #fff;
+                font-weight: 300;
+                text-align: center;
+            }
+            .hero__text{
+                color: #fff;
+                text-align: center;
+                font-size: 17px;
+                font-family: "Oxygen";
+                opacity: 63%;
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+            .hero__btn{
+                background: #DD783F;
+                color: #fff;
+                font-size: 14px;
+                font-family: "Oxygen";
+                padding: 12px 30px;
+                border-radius: 3px;
+                transition: .3s ease;
+                cursor: pointer;
+                :hover{
+                    opacity: 80%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (max-width:500px){
+    .header{
+        .container{
+            .navbar{
+                .navbar__collection{
+                    .navbar__item{
+                        display: none;
+                    }
+                    .navbar__bar{
+                        display: block;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            .hero{
+                .hero__main{
+                    font-size: 30px;
+                }
+                .hero__text{
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

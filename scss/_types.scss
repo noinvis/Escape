@@ -1,0 +1,18 @@
+.types{
+    .container{
+        .types__collection{
+            overflow: hidden;
+            height: 65px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            .types__item{
+                font-size: 14px;
+                font-family: "Lora";
+                color: #768088;
+                padding: 0 16px;
+            }
+        }
+    }
+}

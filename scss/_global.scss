@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Lora";
+    src: url("../fonts/Lora-Regular.ttf");
+}
+@font-face {
+    font-family: "Oxygen";
+    src: url("../fonts/Oxygen-Regular.ttf");
+}
+*{
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+li{
+    list-style: none;
+}
+button, input, textarea, select{
+    outline: none;
+    border: none;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.container{
+    max-width: 940px;
+    padding: 0 16px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button{
+    cursor: pointer;
+}
+
+.animation-middle{
+    transform: scale(0.5);
+    opacity: 0;
+    animation: FromMiddle .8s ease-out .2s forwards;
+}
+.animation-top{
+    transform: translateY(-60px);
+    opacity: 0;
+    animation: FromTop .5s ease-out .2s forwards;
+}
+.animation-right{
+    transform: translateX(60px);
+    opacity: 0;
+    animation: FromRight .5s ease-out .3s forwards;
+}
+.animation-left{
+    transform: translateX(-60px);
+    opacity: 0;
+    animation: FromLeft .5s ease-out .3s forwards;
+}
+.navbar__collection .animation-top:nth-child(2){
+    animation-delay: .4s;
+}
+.navbar__collection .animation-top:nth-child(3){
+    animation-delay: .6s;
+}
+.navbar__collection .animation-top:nth-child(4){
+    animation-delay: .8s;
+}
+.types__collection .animation-top:first-child{
+    animation-delay: .2
+}
+.types__collection .animation-bottom:nth-child(2){
+    animation-delay: .4s;
+}
+.types__collection .animation-top:nth-child(3){
+    animation-delay: .6s;
+}
+.types__collection .animation-top:last-child{
+    animation-delay: .2
+}
+.types__collection .animation-bottom:nth-child(5){
+    animation-delay: .4s;
+}
+.types__collection .animation-top:nth-child(4){
+    animation-delay: .6s;
+}
+
+.animation-bottom{
+    transform: translateY(60px);
+    opacity: 0;
+    animation: FromBottom .5s ease-out .3s forwards;
+}
+@keyframes FromLeft {
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes FromRight {
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes FromTop {
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes FromBottom {
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes FromMiddle {
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
