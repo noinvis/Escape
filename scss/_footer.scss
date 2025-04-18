@@ -38,6 +38,7 @@ footer{
         background: #232F38;
         width: 100%;
         .navbar{
+            padding: 30px 0;
             min-height: 90px;
             display: flex;
             justify-content: space-between;
@@ -60,6 +61,7 @@ footer{
 
 @media (max-width:550px) {
     footer{
+        gap: 100px;
         .footer__main{
             width: 350px;
             .footer__inp{
@@ -69,9 +71,6 @@ footer{
         .footer__end{
             .navbar{
                 display: grid;
-                .navbar__logo{
-                    margin-top: 20px;
-                }
                 .navbar__collection{
                     margin-top: 10px;
                     display: grid;
